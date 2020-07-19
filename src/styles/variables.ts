@@ -39,6 +39,8 @@ export const Color = {
   bgSecondaryDark: '#f4f4f4',
   bgInputDark: 'rgb(6, 6, 19)',
   errors: '#c53030',
+  success: '#28a745',
+  info: '#3172b7',
 };
 
 // --------------------------------------------------

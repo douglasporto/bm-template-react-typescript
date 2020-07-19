@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BackgroundImg from '../../assets/login-project-manager.jpg';
+import BackgroundImg from '../../assets/login-project-manager.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -15,7 +15,7 @@ export const Content = styled.div`
   width: 100%;
   max-width: 700px;
   img {
-    width: 300px;
+    width: 200px;
   }
   form {
     margin: 80px;
