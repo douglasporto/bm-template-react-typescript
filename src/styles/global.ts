@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import { invert } from 'polished';
+import * as V from './variables';
 
 export default createGlobalStyle`
   /* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
@@ -15,11 +17,33 @@ export default createGlobalStyle`
   html, body, #root {
     height: 100%;
   }
+
+  body.dark {
+    --themeColor: ${V.Color.themeColor};
+    --bg: ${V.Color.backgroundDark};
+    --bgSolid: ${V.Color.bgSecondaryDark};
+    --text: ${V.Color.text};
+    --muted: ${V.Color.muted};
+    --bgInput: ${V.Color.bgInputDark};
+    --bgInputTxt: ${invert(V.Color.bgInputDark)};
+  }
+
+  body.light {
+    --themeColor: ${V.Color.themeColor};
+    --bg: '#fff';
+    --bgSolid: ${V.Color.bgSecondaryLight};
+    --text: ${invert(V.Color.text)};
+    --muted: ${invert(V.Color.muted)};
+    --bgInput: ${invert(V.Color.bgInputDark)};
+    --bgInputTxt: ${V.Color.bgInputDark};
+  }
+
   body {
-    background: rgb(8, 8, 26);
-    color: #ffffff;
+    background: var(--bg);
+    color: var(--bgSecondary);
     -webkit-font-smoothing: antialiased;
   }
+
   body, input, button {
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
@@ -30,7 +54,7 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
   }
-  ul {
+  ul, nav {
     list-style: none;
   }
   button {
