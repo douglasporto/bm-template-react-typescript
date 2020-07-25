@@ -22,16 +22,18 @@ export default createGlobalStyle`
     --themeColor: ${V.Color.themeColor};
     --bg: ${V.Color.backgroundDark};
     --bgSolid: ${V.Color.bgSecondaryDark};
-    --bgSecondary: ${V.Color.bgSecondaryDark};
+    --text: ${V.Color.text};
+    --muted: ${V.Color.muted};
     --bgInput: ${V.Color.bgInputDark};
     --bgInputTxt: ${invert(V.Color.bgInputDark)};
   }
 
   body.light {
     --themeColor: ${V.Color.themeColor};
-    --bg: ${invert(V.Color.backgroundDark)};
-    --bgSolid: ${invert(V.Color.bgSecondaryDark)};
-    --bgSecondary: ${invert(V.Color.bgSecondaryDark)};
+    --bg: '#fff';
+    --bgSolid: ${V.Color.bgSecondaryLight};
+    --text: ${invert(V.Color.text)};
+    --muted: ${invert(V.Color.muted)};
     --bgInput: ${invert(V.Color.bgInputDark)};
     --bgInputTxt: ${V.Color.bgInputDark};
   }
@@ -52,7 +54,7 @@ export default createGlobalStyle`
   a {
     text-decoration: none;
   }
-  ul {
+  ul, nav {
     list-style: none;
   }
   button {

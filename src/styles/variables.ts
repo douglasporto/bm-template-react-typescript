@@ -35,11 +35,14 @@ export const Height = {
 
 export const Color = {
   themeColor: '#7935c7',
+  bgSecondaryLight: '#EFF3F9',
   backgroundDark: 'rgb(8, 8, 26)',
-  bgSecondaryDark: '#f4f4f4',
+  bgSecondaryDark: 'rgb(6, 6, 19)',
+  text: '#f4ede8',
+  muted: '#a8a8b3',
   bgInputDark: 'rgb(6, 6, 19)',
   errors: '#c53030',
-  success: '#28a745',
+  success: '#3dff00',
   info: '#3172b7',
 };
 

@@ -60,18 +60,20 @@ const SignIn: React.FC = () => {
   return (
     <S.Container>
       <S.Content>
-        <img src={logoImg} alt="Project Manager" />
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <h1>Faça seu Login</h1>
-          <Input name="email" icon={FiMail} placeholder="E-mail" />
-          <Input
-            name="password"
-            icon={FiLock}
-            type="password"
-            placeholder="Senha"
-          />
-          <Button type="submit">Entrar</Button>
-        </Form>
+        <S.AnimationContainer>
+          <img src={logoImg} alt="Project Manager" />
+          <Form ref={formRef} onSubmit={handleSubmit}>
+            <h1>Faça seu Login</h1>
+            <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Input
+              name="password"
+              icon={FiLock}
+              type="password"
+              placeholder="Senha"
+            />
+            <Button type="submit">Entrar</Button>
+          </Form>
+        </S.AnimationContainer>
       </S.Content>
       <S.Background />
     </S.Container>
