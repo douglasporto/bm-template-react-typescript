@@ -9,7 +9,7 @@ import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
 import getValidationErros from '../../utils/getValidationErros';
 
-import logoImg from '../../assets/logo-pm.png';
+import logoImg from '../../assets/bm-logo.png';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 
@@ -61,7 +61,7 @@ const SignIn: React.FC = () => {
     <S.Container>
       <S.Content>
         <S.AnimationContainer>
-          <img src={logoImg} alt="Project Manager" />
+          <img src={logoImg} alt="Logo Brain & Mind" />
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Faça seu Login</h1>
             <Input name="email" icon={FiMail} placeholder="E-mail" />
